@@ -52,15 +52,17 @@ class WP_Post_ACL {
   }
 
   public function add_meta_box() {
-    // Shortcode meta box
-    add_meta_box(
-      'post-acl',
-      __( 'Edit Permissions', 'wp-post-acl' ),
-      array( $this, 'metabox_acl' ),
-      $this->post_types,
-      'side',
-      'default'
-    );
+    if( current_user_can( 'remove_users' ) ) {
+      // Shortcode meta box
+      add_meta_box(
+        'post-acl',
+        __( 'Edit Permissions', 'wp-post-acl' ),
+        array( $this, 'metabox_acl' ),
+        $this->post_types,
+        'side',
+        'default'
+      );
+    }
   }
 
   public function metabox_acl( $post ) {
@@ -80,11 +82,14 @@ class WP_Post_ACL {
     wp_nonce_field( 'wp_post_acl_meta', 'wp_post_acl_meta_nonce' );
   }
 
+  /**
+   * An easy way to check if a user has edit permissions for a post
+   */
   public function has_edit_permissions( $post_id, $user ) {
     $permissions = get_post_meta( $post_id, '_acl_edit_permissions', true );
 
     // convert $user to WP_User if not yet an instance
-    if(! $user instanceof WP_User ) {
+    if( ! $user instanceof WP_User ) {
       if( is_numeric( $user ) ) {
         $user = get_user_by( $user, 'slug' );
       }
@@ -105,6 +110,16 @@ class WP_Post_ACL {
       return;
     }
     else if ( ! wp_verify_nonce( $_POST['wp_post_acl_meta_nonce'], 'wp_post_acl_meta' ) ) {
+      return;
+    }
+
+    // check permissions
+    if( ! current_user_can( 'remove_users' ) ) {
+      return;
+    }
+
+    // check valid post type
+    if ( !isset( $_POST['post_type'] ) || ! in_array( $_POST['post_type'], $this->post_types ) ) {
       return;
     }
 
