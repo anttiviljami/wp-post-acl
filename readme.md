@@ -1,4 +1,5 @@
 # WP Post ACL
+[![Latest Stable Version](https://poser.pugx.org/anttiviljami/wp-post-acl/v/stable)](https://packagist.org/packages/anttiviljami/wp-post-acl) [![Total Downloads](https://poser.pugx.org/anttiviljami/wp-post-acl/downloads)](https://packagist.org/packages/anttiviljami/wp-post-acl) [![Latest Unstable Version](https://poser.pugx.org/anttiviljami/wp-post-acl/v/unstable)](https://packagist.org/packages/anttiviljami/wp-post-acl) [![License](https://poser.pugx.org/anttiviljami/wp-post-acl/license)](https://packagist.org/packages/anttiviljami/wp-post-acl)
 
 A simple way to control who can edit WordPress posts or pages.
 
