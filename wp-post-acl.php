@@ -119,9 +119,15 @@ class WP_Post_ACL {
 
   public function metabox_acl( $post ) {
     $editors = self::get_editors();
+    if( empty( $editors ) ) {
+?>
+<p><?php _e('No users of role <em>editor</em> found.', 'wp-post-acl'); ?></p>
+<?php
+      return;
+    }
     $permissions = get_post_meta( $post->ID, '_acl_edit_permissions', true );
 ?>
-<p style=""><?php _e("You may deselect any users of the role <em>editor</em> who aren't allowed to edit this post."); ?></p>
+<p style=""><?php _e("You may deselect any users of the role <em>editor</em> who aren't allowed to edit this post.", 'wp-post-acl'); ?></p>
 <ul class="acl-list">
 <?php foreach( $editors as $editor ) : ?>
   <li>
