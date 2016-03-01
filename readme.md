@@ -3,6 +3,8 @@
 
 A simple way to control who can edit WordPress posts or pages.
 
+Adds an Edit Permissions metabox to the post edit page, where you can select which users can edit the post.
+
 Only applies to users of role *editor*.
 
 ## Screenshots

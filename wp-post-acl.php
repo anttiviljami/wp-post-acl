@@ -10,7 +10,8 @@
  * License URI: https://www.gnu.org/licenses/gpl.html
  * Text Domain: wp-post-acl
  *
- * A simple way to control who can edit posts or pages
+ * Adds an Edit Permissions metabox to the post edit page, where you can select
+ * which users can edit the post.
  */
 
 /** Copyright 2016 Antti Kuosmanen
