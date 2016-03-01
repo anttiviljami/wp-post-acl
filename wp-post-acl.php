@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin name: WP Post ACL
- * Plugin URI: https://github.com/anttiviljami/wp-libre-form
+ * Plugin URI: https://github.com/anttiviljami/wp-post-acl
  * Description: A simple way to control who can edit posts or pages
  * Version: 1.0
  * Author: @anttiviljami
