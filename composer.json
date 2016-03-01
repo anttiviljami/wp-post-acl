@@ -1,0 +1,13 @@
+{
+    "name": "anttiviljami/wp-post-acl",
+    "description": "A simple way to control who can edit WordPress posts or pages",
+    "type": "wordpress-plugin",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Antti Kuosmanen",
+            "email": "antti@seravo.fi"
+        }
+    ],
+    "require": {}
+}
