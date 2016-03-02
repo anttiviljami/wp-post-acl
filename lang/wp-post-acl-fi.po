@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP Post ACL\n"
 "POT-Creation-Date: 2016-03-01 23:17+0200\n"
-"PO-Revision-Date: 2016-03-01 23:17+0200\n"
+"PO-Revision-Date: 2016-03-02 11:51+0200\n"
 "Last-Translator: Antti Kuosmanen <antti@seravo.fi>\n"
 "Language-Team: Antti Kuosmanen <antti@seravo.fi>\n"
 "Language: fi\n"
@@ -26,14 +26,14 @@ msgstr "Muokkausoikeudet"
 
 #: wp-post-acl.php:124
 msgid "No users of role <em>editor</em> found."
-msgstr "Yhtään <em>pääkirjoittajaa</em> ei löytynyt."
+msgstr "Yhtään <em>päätoimittajaa</em> ei löytynyt."
 
 #: wp-post-acl.php:130
 msgid ""
 "You may deselect any users of the role <em>editor</em> who aren't allowed to "
 "edit this post."
 msgstr ""
-"Voit poistaa allaolevilta <em>pääkirjoittaja</em>-käyttäjiltä "
+"Voit poistaa allaolevilta <em>päätoimittaja</em>-käyttäjiltä "
 "muokkausoikeudet."
 
 #. Plugin Name of the plugin/theme
