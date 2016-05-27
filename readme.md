@@ -7,6 +7,14 @@ Adds an Edit Permissions metabox to the post edit page, where you can select whi
 
 Only applies to users of role *editor*.
 
+## Custom Post Types
+
+You can apply ACL rules to custom post types too. Just define your custom post type in wp-config.php like this:
+
+```php
+define( 'ACL_POST_TYPES', serialize( [ 'post', 'page', 'my-cpt' ] ) );
+```
+
 ## Screenshots
 
 ### Edit Permissions as administrator on post edit page
