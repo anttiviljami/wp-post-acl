@@ -3,8 +3,8 @@ Contributors: Zuige
 Tags: acl, edit, permissions, restrict, post, editor, change, allow, disallow
 Donate link: https://github.com/anttiviljami
 Requires at least: 4.2
-Tested up to: 4.4.2
-Stable tag: 1.0
+Tested up to: 4.4.4
+Stable tag: 1.0.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -43,3 +43,4 @@ Commit log is available at https://github.com/anttiviljami/wp-post-acl/commits/m
 == Upgrade Notice ==
 
 * 1.0 There's an update available to WP Post ACL that makes it better. Please update it!
+

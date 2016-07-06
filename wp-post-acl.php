@@ -3,7 +3,7 @@
  * Plugin name: WP Post ACL
  * Plugin URI: https://github.com/anttiviljami/wp-post-acl
  * Description: A simple way to control who can edit posts or pages
- * Version: 1.0
+ * Version: 1.0.1
  * Author: @anttiviljami
  * Author URI: https://github.com/anttiviljami/
  * License: GPLv3
